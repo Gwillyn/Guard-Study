@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition-duration: 500ms;
+    cursor: default;
+    /* border: 1px solid black; */
+}
+
+header {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+#subtitle {
+    font-size: 20px;
+}
+
+#pickText {
+    margin: 100px auto 40px auto;
+    text-align: center;
+    font-size: 30px;
+}
+
+#pickContainer {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto 0 auto;
+    padding-right: 10px;
+    padding-left: 30px;
+    flex-wrap: wrap;
+}
+
+.selection {
+    width: 300px;
+    border: 1px solid black;
+    height: 300px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+.selection:hover {
+    transform: scale(1.1)
+}
+.selection:hover + .selectionText {
+    transform:translateY(11px)
+}
+.selectionText {
+    margin-top: -25px;
+    text-align: center;
+    margin-bottom: 15px;
+}
