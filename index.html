@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap" rel="stylesheet">
 </head>
 <header>
     <h1>Guard Study</h1>
@@ -85,8 +88,10 @@
 
                 </svg></a>
         </div>
-        <!-- <div class="navElement"></div>
-        <div class="navElement"></div> -->
+        <!-- <div class="navElement" id="forwardBtn"></div> -->
+        <div class="navElement" id="backBtn"><a><svg width="55px" height="55px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <path d="M15 7.5c0 3.033-2.467 5.5-5.5 5.5h-2.912l2.646 2.646-0.707 0.707-3.853-3.853 3.854-3.854 0.707 0.707-2.647 2.647h2.912c2.481 0 4.5-2.019 4.5-4.5s-2.019-4.5-4.5-4.5h-7.083v-1h7.083c3.033 0 5.5 2.467 5.5 5.5z" fill="#000000" />
+        </svg></a></div>
     </div>
     <fieldset>
         <div id="pickText">
@@ -96,18 +101,18 @@
         <div id="pickContainer">
 
             <div class="selectionContainer">
-                <div class="selection" id="select1">
+                <div class="selection" id="selection1">
                 </div>
                 <div class="selectionText" id="selectionText1">Open Guard</div>
             </div>
             <div class="selectionContainer">
-                <div class="selection" id="select2">
+                <div class="selection" id="selection2">
 
                 </div>
                 <div class="selectionText" id="selectionText2">Outside Foot Position</div>
             </div>
             <div class="selectionContainer">
-                <div class="selection" id="select3">
+                <div class="selection" id="selection3">
 
                 </div>
                 <div class="selectionText" id="selectionText3">Inside Foot Position</div>
@@ -115,4 +120,5 @@
         </div>
     </fieldset>
     <script src="script.js"></script>
+    <footer>Created and Designed by Gwillyn Donaghy</footer>
 </body>
