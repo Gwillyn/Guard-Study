@@ -15,23 +15,51 @@ const selection = document.getElementsByClassName('selection');
 const selection1 = document.getElementById('selection1');
 const selection2 = document.getElementById('selection2');
 const selection3 = document.getElementById('selection3');
+const selectionText1 = document.getElementById('selectionText1');
+const selectionText2 = document.getElementById('selectionText2');
+const selectionText3 = document.getElementById('selectionText3');
+
 function showNav() {navbar.style.display = 'flex'}
-selection[0].addEventListener('click', showNav), selection[1].addEventListener('click', showNav), selection[2].addEventListener('click', showNav);
+selection[0].addEventListener('click', showNav), selection[1].addEventListener('click', showNav), selection[2].addEventListener('click', showNav); 
 
 
 
 const openGuard = [
     {
-        name: supine,
-        text: "Supine Guard"
-    }, 
-    {
-        name: seated,
-        text: "Seated Guard"
+        "text": ["Supine Guard", "Seated Guard", "Something"],
+        btnFunction: []
     }
 ];
-const outsidePosition = [];
-const insidePosition = [];
+const outsidePosition = [
+    {
+        
+        "text": ["Closed Guard", "K-Guard"], 
+        btnFunction: []
+    }
+];
+const insidePosition = [
+    {
+        name: "halfGuard",
+        "text": ["Half Guard", "Butterfly Guard"], 
+        btnFunction: []
+    }
+]
+function update(g) {
+    selectionText1.innerHTML = g["text"][0];
+    selectionText2.innerHTML = g["text"][1];
+    selectionText3.innerHTML = g["text"][2];
+    selection1.onclick = () => {g[btnFunction][0]};
+    selection2.onclick = () => {g[btnFunction][1]};
+    selection3.onclick = () => {g[btnFunction][2]};
+}
+
+
+selection1.onclick = () => {update(openGuard[0])};
+selection2.onclick = () => {update(outsidePosition[0])}
+selection3.onclick = () => {update(insidePosition[0])}
+
+
+
 
 
 
