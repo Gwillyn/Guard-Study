@@ -140,6 +140,31 @@ fieldset {
     text-align: center;
     margin-bottom: 0px;
 }
+#selection1 {
+    background-image: url('images/open.png');
+    background-size: contain;
+    background-position-y: center;
+    background-color: black;
+    background-repeat: space; 
+}
+#selection2 {
+    background-image: url('images/outside.png');
+    background-size: contain;
+    background-position-y: center;
+    background-color: black;
+    background-repeat: space; 
+
+
+}
+#selection3 {
+    background-image: url('images/inside.png');
+    background-size: contain;
+    background-position-y: center;
+    background-repeat: space; 
+    background-color: black;
+
+
+}
 
 #container {
     margin: 160px auto 0 auto;
