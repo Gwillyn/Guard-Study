@@ -1,14 +1,14 @@
 const navbar = document.getElementById('navbar');
 
 const homeBtn = document.getElementById('home');
-homeBtn.addEventListener('click', () => {location.reload()});
+homeBtn.addEventListener('click', () => { location.reload() });
 
 // Adds an animation to the belt on mouse-over
 const belt = document.getElementById('belt');
 belt.addEventListener('mouseover', wiggle)
 function wiggle() {
     belt.classList.add('wiggle');
-    window.setTimeout(() => {belt.classList.remove('wiggle')}, 1200)
+    window.setTimeout(() => { belt.classList.remove('wiggle') }, 1200)
 }
 
 const selection = document.getElementsByClassName('selection');
@@ -23,8 +23,8 @@ const textContainer = document.getElementById('textContainer');
 const header = document.getElementById('header');
 const paragraph = document.getElementById('paragraph');
 
-function showNav() {navbar.style.display = 'flex'}
-selection[0].addEventListener('click', showNav), selection[1].addEventListener('click', showNav), selection[2].addEventListener('click', showNav); 
+function showNav() { navbar.style.display = 'flex' }
+selection[0].addEventListener('click', showNav), selection[1].addEventListener('click', showNav), selection[2].addEventListener('click', showNav);
 
 
 
@@ -36,14 +36,14 @@ const openGuard = [
 ];
 const outsidePosition = [
     {
-        
-        "text": ["Closed Guard", "K-Guard"], 
+
+        "text": ["Closed Guard", "K-Guard"],
         "btnFunction": [halfGuard, halfGuard, halfGuard]
     }
 ];
 const insidePosition = [
     {
-        "text": ["Half Guard", "Butterfly Guard"], 
+        "text": ["Half Guard", "Butterfly Guard"],
         "btnFunction": [halfGuard, halfGuard, halfGuard]
     }
 ]
@@ -56,9 +56,9 @@ function update(g) {
     selection3.onclick = g["btnFunction"][2];
 }
 
-selection1.onclick = () => {update(openGuard[0])};
-selection2.onclick = () => {update(outsidePosition[0])}
-selection3.onclick = () => {update(insidePosition[0])}
+selection1.onclick = () => { update(openGuard[0]) };
+selection2.onclick = () => { update(outsidePosition[0]) }
+selection3.onclick = () => { update(insidePosition[0]) }
 
 
 function halfGuard() {
